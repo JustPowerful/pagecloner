@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<TITLE>Registre OPTION_REG PIC 16F84A</TITLE> <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+<script type="text/javascript">
+//<![CDATA[
+var gs_d=new Date,DoW=gs_d.getDay();gs_d.setDate(gs_d.getDate()-(DoW+6)%7+3);
+var ms=gs_d.valueOf();gs_d.setMonth(0);gs_d.setDate(4);
+var gs_r=(Math.round((ms-gs_d.valueOf())/6048E5)+1)*gs_d.getFullYear();
+var gs_p = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape("%3Cscript src='" + gs_p + "s.gstat.orange.fr/lib/gs.js?"+gs_r+"' type='text/javascript'%3E%3C/script%3E"));
+//]]>
+</script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFCC">
+<P><A HREF="registrespeciaux.htm"><IMG SRC="../../prev1.gif" WIDTH="32" HEIGHT="32" BORDER="0"> 
+</A><FONT SIZE="6" COLOR="#0000FF"><B>PIC 16F84A</B></FONT></P><P><FONT SIZE="6" COLOR="#0000FF"><B><FONT COLOR="#800000">Registre 
+OPTION_REG</FONT></B></FONT></P><P>&nbsp;</P><P><FONT SIZE="4">Il s'agit d'un registre 
+sp&eacute;cial situ&eacute; &agrave; l'adresse 0x81 (banque 1) de la m&eacute;moire 
+des donn&eacute;es (Data RAM).</FONT></P><P>&nbsp;</P><TABLE WIDTH="89%" BORDER="1"><TR><TD WIDTH="11%"><DIV ALIGN="CENTER"></DIV></TD><TD WIDTH="16%"><DIV ALIGN="CENTER"><B><FONT SIZE="4">Nom</FONT></B></DIV></TD><TD WIDTH="73%"><DIV ALIGN="CENTER"><B><FONT SIZE="4">Description</FONT></B></DIV></TD></TR><TR><TD WIDTH="11%"><DIV ALIGN="CENTER"><FONT SIZE="4">bit 
+7 </FONT></DIV></TD><TD WIDTH="16%"><DIV ALIGN="CENTER"><FONT COLOR="#0000FF"><B><FONT SIZE="5">NOT_RBPU</FONT></B></FONT></DIV></TD><TD WIDTH="73%"><P><FONT SIZE="4">&quot;Port 
+B Pull-up Enable&quot;</FONT></P><UL><LI><FONT SIZE="4">Ce bit doit &ecirc;tre 
+mis &agrave; 0 pour activer les <B><A HREF="pullup.htm">r&eacute;sistances de 
+pull-up</A></B> du port B</FONT></LI><LI><P><FONT SIZE="4"></FONT><FONT SIZE="4">Ce 
+bit doit &ecirc;tre mis &agrave; 1 pour d&eacute;sactiver les r&eacute;sistances 
+de pull-up du port B</FONT></P></LI></UL></TD></TR><TR><TD WIDTH="11%"><DIV ALIGN="CENTER"><FONT SIZE="4">bit 
+6 </FONT></DIV></TD><TD WIDTH="16%"><DIV ALIGN="CENTER"><FONT COLOR="#0000FF"><B><FONT SIZE="5">INTEDG</FONT></B></FONT></DIV></TD><TD WIDTH="73%"><P><FONT SIZE="4">&quot;Interrupt 
+edge select&quot;</FONT></P><UL><LI><FONT SIZE="4">Ce bit doit &ecirc;tre mis 
+&agrave; 0 pour que l'interruption de la broche RB0/INT soit active sur un front 
+descendant</FONT></LI><LI><FONT SIZE="4">Ce bit doit &ecirc;tre mis &agrave; 1 
+pour que l'interruption de la broche RB0/INT soit active sur un front montant 
+</FONT></LI></UL></TD></TR><TR><TD WIDTH="11%"><DIV ALIGN="CENTER"><FONT SIZE="4">bit 
+5 </FONT></DIV></TD><TD WIDTH="16%"><DIV ALIGN="CENTER"><FONT COLOR="#0000FF"><B><FONT SIZE="5">T0CS</FONT></B></FONT></DIV></TD><TD WIDTH="73%"><P><FONT SIZE="4">&quot;TMR0 
+Clock Source Select&quot;</FONT></P><UL><LI><FONT SIZE="4">Ce bit doit &ecirc;tre 
+mis &agrave; 0 pour que l'horloge du module TMR0 soit l'horloge interne (un quart 
+de la fr&eacute;quence du signal OSC1/CLKIN) </FONT></LI><LI><FONT SIZE="4">Ce 
+bit doit &ecirc;tre mis &agrave; 1 pour que l'horloge du module TMR0 soit le signal 
+de la broche RA4/T0CKI</FONT></LI></UL></TD></TR><TR><TD WIDTH="11%"><DIV ALIGN="CENTER"><FONT SIZE="4">bit 
+4</FONT></DIV></TD><TD WIDTH="16%"><DIV ALIGN="CENTER"><FONT COLOR="#0000FF"><B><FONT SIZE="5">T0SE</FONT></B></FONT></DIV></TD><TD WIDTH="73%"><P><FONT SIZE="4">&quot;TMR0 
+Source edge select&quot;</FONT></P><P><FONT SIZE="4">Dans le cas o&ugrave; T0CS 
+= 1, le signal d'horloge de la broche </FONT><FONT SIZE="4">RA4/T0CKI est actif 
+: </FONT></P><UL><LI><FONT SIZE="4"> sur front montant quand T0SE = 0</FONT></LI><LI><FONT SIZE="4">sur 
+front descendant quand T0SE = 1</FONT></LI></UL></TD></TR><TR><TD WIDTH="11%"><DIV ALIGN="CENTER"><FONT SIZE="4">bit 
+3</FONT></DIV></TD><TD WIDTH="16%"><DIV ALIGN="CENTER"><FONT COLOR="#0000FF"><B><FONT SIZE="5">PSA</FONT></B></FONT></DIV></TD><TD WIDTH="73%"><P><FONT SIZE="4">&quot;Prescaler 
+assignment&quot;</FONT></P><P><FONT SIZE="4">Le pr&eacute;diviseur est attribu&eacute; 
+: </FONT></P><UL><LI><FONT SIZE="4">au module TMR0 quand PSA = 0</FONT></LI><LI><FONT SIZE="4">au 
+Watchdog quand PSA = 1</FONT></LI></UL></TD></TR><TR><TD WIDTH="11%"><DIV ALIGN="CENTER"><FONT SIZE="4">bits 
+2, 1, 0 </FONT></DIV></TD><TD WIDTH="16%"><DIV ALIGN="CENTER"><FONT COLOR="#0000FF"><B><FONT SIZE="5">PS2, 
+PS1, PS0</FONT></B></FONT></DIV></TD><TD WIDTH="73%"><FONT SIZE="4">&quot;Prescaler 
+rate select&quot; (Cf. tableau ci-dessous)</FONT></TD></TR></TABLE><P><A NAME="prescaler"></A></P><P><FONT SIZE="5"><B>Param&egrave;tres 
+du prescaler :</B></FONT></P><TABLE WIDTH="52%" BORDER="1"><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT COLOR="#0000FF"><B><FONT SIZE="4">PSA</FONT></B></FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT COLOR="#0000FF" SIZE="4"><B>PS2, 
+PS1, PS0</B></FONT></DIV></TD><TD WIDTH="27%"><P ALIGN="CENTER"><FONT SIZE="4">Taux 
+de pr&eacute;division</FONT></P><P ALIGN="CENTER"><FONT SIZE="4">du module TMR0 
+</FONT></P></TD><TD WIDTH="32%"><P ALIGN="CENTER"><FONT SIZE="4">Taux de pr&eacute;division</FONT></P><P ALIGN="CENTER"><FONT SIZE="4">du 
+Watchdog</FONT></P></TD></TR><TR><TD WIDTH="15%" HEIGHT="2"><DIV ALIGN="CENTER"><FONT SIZE="4">0</FONT></DIV></TD><TD WIDTH="26%" HEIGHT="2"><DIV ALIGN="CENTER"><FONT SIZE="4">000</FONT></DIV></TD><TD WIDTH="27%" HEIGHT="2"><DIV ALIGN="CENTER"><FONT SIZE="4">2</FONT></DIV></TD><TD WIDTH="32%" HEIGHT="2"><DIV ALIGN="CENTER"><FONT COLOR="#804040"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4">0</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">001</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT SIZE="4">4</FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT COLOR="#804040"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4">0</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">010</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT SIZE="4">8</FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT COLOR="#804040"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4">0</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">011</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT SIZE="4">16</FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT COLOR="#804040"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4">0</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">100</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT SIZE="4">32</FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT COLOR="#804040"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4">0</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">101</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT SIZE="4">64</FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT COLOR="#804040"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4">0</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">110</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT SIZE="4">128</FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT COLOR="#804040"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4">0</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">111</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT SIZE="4">256</FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT COLOR="#804040"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4" COLOR="#0000FF">1</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">000</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT COLOR="#800000"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT SIZE="4">1</FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4" COLOR="#0000FF">1</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">001</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT COLOR="#800000"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT SIZE="4">2</FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4" COLOR="#0000FF">1</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">010</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT COLOR="#800000"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT SIZE="4">4</FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4" COLOR="#0000FF">1</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">011</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT COLOR="#800000"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT SIZE="4">8</FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4" COLOR="#0000FF">1</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">100</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT COLOR="#800000"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT SIZE="4">16</FONT></DIV></TD></TR><TR><TD WIDTH="15%" HEIGHT="24"><DIV ALIGN="CENTER"><FONT SIZE="4" COLOR="#0000FF">1</FONT></DIV></TD><TD WIDTH="26%" HEIGHT="24"><DIV ALIGN="CENTER"><FONT SIZE="4">101</FONT></DIV></TD><TD WIDTH="27%" HEIGHT="24"><DIV ALIGN="CENTER"><FONT COLOR="#800000"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD><TD WIDTH="32%" HEIGHT="24"><DIV ALIGN="CENTER"><FONT SIZE="4">32</FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4" COLOR="#0000FF">1</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">110</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT COLOR="#800000"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT SIZE="4">64</FONT></DIV></TD></TR><TR><TD WIDTH="15%"><DIV ALIGN="CENTER"><FONT SIZE="4" COLOR="#0000FF">1</FONT></DIV></TD><TD WIDTH="26%"><DIV ALIGN="CENTER"><FONT SIZE="4">111</FONT></DIV></TD><TD WIDTH="27%"><DIV ALIGN="CENTER"><FONT COLOR="#800000"><B><FONT SIZE="4">1</FONT></B></FONT></DIV></TD><TD WIDTH="32%"><DIV ALIGN="CENTER"><FONT SIZE="4">128</FONT></DIV></TD></TR></TABLE>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof _gstat != "undefined") _gstat.audience('','pagesperso-orange.fr');
+//]]>
+</script>
+</BODY>
+</HTML>

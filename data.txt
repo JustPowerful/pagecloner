@@ -1,0 +1,5 @@
+*TMR0
+http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/tmr0.htm
+http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/optionregister.htm
+http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/optionregister.htm#prescaler
+https://www.mikroe.com/ebooks/pic-microcontrollers-programming-in-c/timer-tmr0
