@@ -1,0 +1,89 @@
+<html>
+<!--
+* PyWebCopy Engine [version 7.0.1]
+* Copyright 2020; Raja Tomar
+* File mirrored from [http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/tmr0.htm]
+* At UTC datetime: [2022-01-16 03:30:43.028910]
+--><head>
+<title>Registre TMR0 PIC 16F84A</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="keywords" content="PIC,microchip,16F84A,timer 0">
+<script type="text/javascript">
+//<![CDATA[
+var gs_d=new Date,DoW=gs_d.getDay();gs_d.setDate(gs_d.getDate()-(DoW+6)%7+3);
+var ms=gs_d.valueOf();gs_d.setMonth(0);gs_d.setDate(4);
+var gs_r=(Math.round((ms-gs_d.valueOf())/6048E5)+1)*gs_d.getFullYear();
+var gs_p = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape("%3Cscript src='" + gs_p + "s.gstat.orange.fr/lib/gs.js?"+gs_r+"' type='text/javascript'%3E%3C/script%3E"));
+//]]>
+</script>
+</head>
+
+<body bgcolor="#FFFFCC">
+<p><a href="http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/registrespeciaux.htm"><img src="../../prev1.gif" width="32" height="32" border="0"></a><font size="6" color="#0000FF"><b><font color="#800000"> 
+  PIC 16F84A</font></b></font></p>
+<p><font size="6" color="#0000FF"><b>Registre TMR0 (Timer 0)</b></font></p>
+<p>&#160;</p>
+<p><font size="4">Il s'agit d'un registre sp&#233;cial situ&#233; &#224; 
+  l'adresse 0x01 (banque 0) de la m&#233;moire des donn&#233;es (Data RAM).</font></p>
+<p><font size="4"><b>Ce 
+registre contient un nombre de 8 bits (0 &#224; 255 en num&#233;ration d&#233;cimale).</b></font></p><p>&#160;</p>
+<p><font size="4">Le module TMR0 (Timer 0) poss&#232;de deux modes de fonctionnement 
+  :</font></p>
+<ul><li><font size="4">1- 
+Le mode timer</font></li><li><font size="4">2- Le mode compteur</font></li></ul><p><font size="5"><b><font color="#0000FF">1- 
+Le mode timer</font></b></font></p><p><font size="4">Pour configurer le module 
+TMR0 en mode timer, il faut au pr&#233;alable que :</font></p>
+<blockquote>
+  <p><font size="4"><b>T0CS = 0</b> (bit 5 du registre <b><a href="http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/optionregister.htm">OPTION_REG</a></b>)</font></p>
+</blockquote>
+<p><font size="4">Le contenu du registre TMR0 est alors incr&#233;ment&#233; 
+  &#224; chaque cycle de l'horloge interne.</font></p>
+<p><font size="4">1 cycle correspond &#224; une dur&#233;e de 1 &#181;s pour 
+  un oscillateur &#224; quartz de 4 MHz (1 cycle = 4 / F OSC).</font></p>
+<p><font size="4">En toute rigueur, cela est vrai si 
+le taux de pr&#233;division (<a href="http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/optionregister.htm#prescaler"><b>prescaler</b></a>) 
+est r&#233;gl&#233; &#224; 1 (bit 3 du registre OPTION_REG = PSA = 1).</font></p>
+<p><font size="4">Avec un taux de pr&#233;division de 128 (PSA = 0, PS2 = 1, 
+  PS1 = 1, PS0 = 0), le contenu du registre TMR0 est incr&#233;ment&#233; 
+  tous les 128 cycles (ou 128 &#181;s).</font></p>
+<p><font size="4">Notez que si le contenu du registre TMR0 est 255 (0xFF), il 
+  passera &#224; 0 (0x00) &#224; la prochaine incr&#233;mentation.</font></p>
+<p>&#160;</p><p><font size="4">En 
+conclusion, le mode timer est utilis&#233; pour <b>mesurer des dur&#233;es.</b></font></p><p>&#160; 
+</p><p><font size="5"><b><font color="#0000FF">2- Le mode compteur</font></b></font></p><p><font size="4">Pour 
+configurer le module TMR0 en mode compteur, il faut au pr&#233;alable que :</font></p>
+<blockquote>
+  <p><font size="4"><b>T0CS = 1</b> (bit 5 du registre <b><a href="http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/optionregister.htm">OPTION_REG</a></b>)</font></p>
+</blockquote>
+<p><font size="4">Le 
+contenu du registre TMR0 est alors incr&#233;ment&#233; &#224; chaque front 
+du signal pr&#233;sent sur la broche RA4/T0CKI :</font></p><ul><li><font size="4">front 
+montant si T0SE = 0 (bit 4 du registre OPTION_REG)</font></li><li><font size="4">front 
+descendant si T0SE = 1 </font></li></ul><p><font size="4">En toute rigueur, cela 
+est vrai si le taux de pr&#233;division (<a href="http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/optionregister.htm#prescaler"><b>prescaler</b></a>) 
+est r&#233;gl&#233; &#224; 1 (bit 3 du registre OPTION_REG = PSA = 1).</font></p>
+<p><font size="4">Avec un taux de pr&#233;division de 32 (PSA = 0, PS2 = 1, 
+  PS1 = 0, PS0 = 0), le contenu du registre TMR0 est incr&#233;ment&#233; 
+  tous les 32 cycles du signal pr&#233;sent sur la broche RA4/T0CKI.</font></p>
+<p><font size="4">En conclusion, le mode compteur est utilis&#233; pour <b>faire 
+  du ... comptage.</b></font></p>
+<p>&#160;</p>
+<p><b><font size="5" color="#0000FF">3 - Interruption</font></b></p>
+<p><font size="4">On peut activer une interruption quand le registre TMR0 d&#233;borde 
+  (passage de 0xFF &#224; 0x00).</font></p>
+<blockquote> 
+  <p><font size="4"><a href="http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/interrupt.htm"><b><i>Pour plus d'informations sur 
+    l'interruption TMR0</i></b></a></font></p>
+  <p>&#160;</p>
+</blockquote>
+<p><font size="4"><b>(C) Fabrice Sinc&#232;re</b></font></p>
+<p>&#160;</p>
+<p>&#160;</p>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof _gstat != "undefined") _gstat.audience('','pagesperso-orange.fr');
+//]]>
+</script>
+</body>
+</html>

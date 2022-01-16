@@ -1,7 +1,8 @@
+# install pywebcopy from official github page: https://github.com/rajatomar788/pywebcopy
 import os
 import requests
 import bs4
-
+from pywebcopy import save_webpage 
 filename = "data.txt"
 with open(filename) as file:
     lines = file.readlines()
@@ -24,4 +25,8 @@ for line in lines:
             webtitle = "Unnamed please rename it"
         filetitle = "".join(x for x in webtitle if x.isalnum())
 
-        open("./{}/{}.html".format(foldername, filetitle), 'wb').write(req.content)
+        kwargs = {'bypass_robots': True, 'project_name': filetitle}
+        try:
+            save_webpage(currenturl, "./{}".format(foldername), bypass_robots=True, project_name=filetitle)
+        except pywebcopy.exceptions.AccessError:
+            print("ERROR BABY")

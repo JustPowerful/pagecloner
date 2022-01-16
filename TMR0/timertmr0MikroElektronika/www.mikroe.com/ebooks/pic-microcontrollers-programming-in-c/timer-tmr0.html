@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-us"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7" lang="en-us"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en-us"><![endif]-->
-<!--[if gt IE 8]> <html class="no-js ie9" lang="en-us"><![endif]-->
 <html lang="en-us">
-<head>
-<meta charset="utf-8"/>
+<!--
+* PyWebCopy Engine [version 7.0.1]
+* Copyright 2020; Raja Tomar
+* File mirrored from [https://www.mikroe.com/ebooks/pic-microcontrollers-programming-in-c/timer-tmr0]
+* At UTC datetime: [2022-01-16 03:30:58.163110]
+--><head>
+<meta charset="utf-8">
 <title>timer-tmr0 - MikroElektronika</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <script data-keepinline="true">
@@ -24,50 +24,50 @@ dataLayer.push({
   'event': 'datalayer_ready'
 });
 </script>
-<meta name="keywords" content="online books, ebooks, mikroe, timer-tmr0"/>
-<meta name="generator" content="PrestaShop"/>
-<meta name="robots" content="index,follow"/>
-<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0"/>
-<meta name="apple-mobile-web-app-capable" content="yes"/>
-<meta name="p:domain_verify" content="6f2450a1b242c433403a7226b4aa6666"/>
-<link rel="icon" href="/img/favicons/mikroe-site-icon-64x64.png" sizes="64x64"/>
-<link rel="icon" crossOrigin="Anonymous" type="image/vnd.microsoft.icon" href="//cdn.mikroe.com/themes/simplicity/img/header/links/mikroelektronika/favicon.ico"/>
-<link rel="shortcut icon" crossOrigin="Anonymous" type="image/x-icon" href="//cdn.mikroe.com/themes/simplicity/img/header/links/mikroelektronika/favicon.ico"/>
-<link rel="apple-touch-icon-precomposed" crossOrigin="Anonymous" href="//cdn.mikroe.com/themes/simplicity/img/header/links/mikroelektronika/favicon.ico">
-<link rel="apple-touch-icon" crossOrigin="Anonymous" sizes="64x64" href="/img/favicons/mikroe-site-icon-64x64.png">
-<link rel="apple-touch-icon" crossOrigin="Anonymous" sizes="120x120" href="/img/favicons/mikroe-site-icon-120x120.png">
-<link rel="apple-touch-icon" crossOrigin="Anonymous" sizes="180x180" href="/img/favicons/mikroe-site-icon-180x180.png">
-<link rel="apple-touch-icon" crossOrigin="Anonymous" sizes="260x260" href="/img/favicons/mikroe-site-icon-260x260.png">
-<link rel="apple-touch-icon" crossOrigin="Anonymous" sizes="320x320" href="/img/favicons/mikroe-site-icon-320x320.png">
-<link rel="apple-touch-icon" crossOrigin="Anonymous" sizes="512x512" href="/img/favicons/mikroe-site-icon-512x512.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/img/favicons/mikroe-site-icon-64x64.png">
-<link rel="icon" type="image/png" sizes="120x120" href="/img/favicons/mikroe-site-icon-120x120.png">
-<link rel="icon" type="image/png" sizes="180x180" href="/img/favicons/mikroe-site-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="260x260" href="/img/favicons/mikroe-site-icon-260x260.png">
-<link rel="icon" type="image/png" sizes="320x320" href="/img/favicons/mikroe-site-icon-320x320.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/img/favicons/mikroe-site-icon-512x512.png">
+<meta name="keywords" content="online books, ebooks, mikroe, timer-tmr0">
+<meta name="generator" content="PrestaShop">
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="p:domain_verify" content="6f2450a1b242c433403a7226b4aa6666">
+<link rel="icon" href="../../img/favicons/mikroe-site-icon-64x64.png" sizes="64x64">
+<link rel="icon" type="image/vnd.microsoft.icon" href="../../../cdn.mikroe.com/themes/simplicity/img/header/links/mikroelektronika/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="../../../cdn.mikroe.com/themes/simplicity/img/header/links/mikroelektronika/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="../../../cdn.mikroe.com/themes/simplicity/img/header/links/mikroelektronika/favicon.ico">
+<link rel="apple-touch-icon" sizes="64x64" href="../../img/favicons/mikroe-site-icon-64x64.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../img/favicons/mikroe-site-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/favicons/mikroe-site-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="260x260" href="../../img/favicons/mikroe-site-icon-260x260.png">
+<link rel="apple-touch-icon" sizes="320x320" href="../../img/favicons/mikroe-site-icon-320x320.png">
+<link rel="apple-touch-icon" sizes="512x512" href="../../img/favicons/mikroe-site-icon-512x512.png">
+<link rel="icon" type="image/png" sizes="64x64" href="../../img/favicons/mikroe-site-icon-64x64.png">
+<link rel="icon" type="image/png" sizes="120x120" href="../../img/favicons/mikroe-site-icon-120x120.png">
+<link rel="icon" type="image/png" sizes="180x180" href="../../img/favicons/mikroe-site-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="260x260" href="../../img/favicons/mikroe-site-icon-260x260.png">
+<link rel="icon" type="image/png" sizes="320x320" href="../../img/favicons/mikroe-site-icon-320x320.png">
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/favicons/mikroe-site-icon-512x512.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="https://cdn.mikroe.com/themes/simplicity/css/OverlayScrollbars.min.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="/themes/me-simplicity/css/A.global.css,,qv==1639046148+my-account.css,,qv==1616583168+mmenu.css,,qv==1565777516,Mcc.o_UpcHv037.css.pagespeed.cf.iq-yPnwDJX.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="https://cdn.mikroe.com/themes/simplicity/css/jquery/jquery-confirm.min.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="/A.themes,,_me-simplicity,,_css,,_autoload,,_company-history.css,,qv==1550850948+themes,,_me-simplicity,,_css,,_autoload,,_distributors.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_autoload,,_flag-icon.min.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_autoload,,_font-awesome-animation.min.css,,qv==1482495456+themes,,_me-simplicity,,_css,,_autoload,,_highdpi.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_autoload,,_me-localnav.css,,qv==1550850948+themes,,_me-simplicity,,_css,,_autoload,,_me-search.css,,qv==1597131637+themes,,_me-simplicity,,_css,,_autoload,,_responsive-tables.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_autoload,,_suggestion-box.css,,qv==1563463259+themes,,_me-simplicity,,_css,,_autoload,,_uniform.default.css,,qv==1600849880+themes,,_me-simplicity,,_css,,_product_list.css,,qv==1597159154+modules,,_cmsproducts,,_cmsproducts.css,,qv==1512203431+themes,,_me-simplicity,,_css,,_cms_v3.css,,qv==1639144997,Mcc.YYjRW3Q7eV.css.pagespeed.cf.MMSmkQTDz5.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="/A.themes,,_me-simplicity,,_css,,_slick.css,,qv==1550850948+themes,,_me-simplicity,,_css,,_simplelightbox.css,,qv==1577456456+themes,,_me-simplicity,,_css,,_select2.min.css,,qv==1541070326+modules,,_prestablog,,_views,,_css,,_grid-for-1-6-module.css,,qv==1638177482+themes,,_me-simplicity,,_css,,_modules,,_flashsalepro,,_views,,_front.css,,qv==1550850948+themes,,_me-simplicity,,_css,,_modules,,_flashsalepro,,_views,,_slick.css,,qv==1486477169+themes,,_me-simplicity,,_css,,_modules,,_flashsalepro,,_views,,_flipclock.css,,qv==1573547947+themes,,_me-simplicity,,_css,,_modules,,_blockbanner,,_blockbanner.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blockbestsellers,,_blockbestsellers.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blockcart,,_blockcart.css,,qv==1550850948+js,,_jquery,,_plugins,,_bxslider,,_jquery.bxslider.css,,qv==1521133368+themes,,_me-simplicity,,_css,,_modules,,_blockcurrencies,,_blockcurrencies.css,,qv==1475700643,Mcc.px-73-j-k0.css.pagespeed.cf.6lbwC6AWAZ.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="/A.themes,,_me-simplicity,,_css,,_modules,,_blocklanguages,,_blocklanguages.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blocknewproducts,,_blocknewproducts.css,,qv==1551970430+themes,,_me-simplicity,,_css,,_modules,,_blocknewsletter,,_blocknewsletter.css,,qv==1527245543+themes,,_me-simplicity,,_css,,_modules,,_blocktags,,_blocktags.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blockuserinfo,,_blockuserinfo.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blockviewed,,_blockviewed.css,,qv==1597050628+themes,,_me-simplicity,,_css,,_modules,,_blocktopmenu,,_css,,_blocktopmenu.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blocktopmenu,,_css,,_superfish-modified.css,,qv==1475700643+modules,,_advancedeucompliance,,_views,,_css,,_aeuc_front.css,,qv==1475700643,Mcc.pblNVXf7Dg.css.pagespeed.cf.YY_q9fNRf-.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="//cdn.mikroe.com/theme/fonts/geogrotesque/geogrotesque-normal.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="//cdn.mikroe.com/themes/simplicity/fonts/simplicity-icons/css/me-simplicity-icons.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="//cdn.mikroe.com/themes/simplicity/fonts/font-awesome/css/font-awesome.min.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="//cdn.mikroe.com/themes/simplicity/fonts/absolut_pro/absolut_pro.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="//cdn.mikroe.com/fontawesome-pro/css/all.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="/A.modules,,_blockyoutubevideos,,_views,,_css,,_front.css,,qv==1470212952+modules,,_mikroedropcart,,_views,,_css,,_bootstrap.min.css,,qv==1475700643+modules,,_mikroedropcart,,_views,,_css,,_front.css,,qv==1550850948+themes,,_me-simplicity,,_css,,_modules,,_gsnipreview,,_views,,_css,,_gsnipreview.css,,qv==1550850948+modules,,_mikroeshoppicker,,_views,,_css,,_front.css,,qv==1550850948+modules,,_contentrevolution,,_views,,_css,,_owl.carousel.css,,qv==1477485235+modules,,_contentrevolution,,_views,,_css,,_nivo-slider.css,,qv==1477485235+modules,,_contentrevolution,,_views,,_css,,_contentrevolution.css,,qv==1537200594+modules,,_mikroelocalnav,,_views,,_css,,_front.css,,qv==1550850948+modules,,_mikroeajaxproducts,,_views,,_css,,_front.css,,qv==1482136928+modules,,_mikroeproductstatus,,_views,,_css,,_front.css,,qv==1550850948+modules,,_mikroesupportedmcus,,_views,,_css,,_front.css,,qv==1499429708+modules,,_mikroecachecleaner,,_views,,_css,,_front.css,,qv==1500536627,Mcc.SH5iwRomCI.css.pagespeed.cf.MqTOnsrJ-F.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="/modules/A.mikroecmsebookstoc,,_views,,_css,,_front.css,,qv==1512202869+mikroeredireciotns,,_views,,_css,,_front.css,,qv==1512203289+mikroelandingpage,,_views,,_css,,_front.css,,qv==1638349216+mikroecustomization,,_views,,_css,,_front.css,,qv==1526660107+pscookiebanner,,_views,,_css,,_jquery-eu-cookie-law-popup.css,,qv==1618481616+mikroecarrieradditionalpayment,,_views,,_css,,_front.css,,qv==1545316486+mikroecategories,,_views,,_css,,_front.css,,qv==1635937524+mikroeproductbuilders,,_views,,_css,,_front.css,,qv==1603350942+mikroecartruleincrementer,,_views,,_css,,_front.css,,qv==1617270961+mikroeraiffeisenpayments,,_views,,_css,,_front.css,,qv==1597050627+mikroeplanetdebug,,_views,,_css,,_front.css,,qv==1635954370+mikroetwocheckoutconvertplus,,_views,,_css,,_front.css,,qv==1610443366+unpaidordernotifier,,_views,,_css,,_front.css,,qv==1623156206,Mcc.kYLZCdkEyo.css.pagespeed.cf.rvbbR5d5n7.css" type="text/css" media="all"/>
-<link rel="stylesheet" href="/A.themes,,_me-simplicity,,_css,,_backdrop.css,,qv==1571040798+js,,_jquery,,_ui,,_themes,,_base,,_jquery.ui.core.css,,qv==1475700643+js,,_jquery,,_ui,,_themes,,_base,,_jquery.ui.datepicker.css,,qv==1475700643+js,,_jquery,,_ui,,_themes,,_base,,_jquery.ui.theme.css,,qv==1475700643,Mcc.Y9s6apkK4d.css.pagespeed.cf.SNQ-UXGhVk.css" type="text/css" media="all"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="timer-tmr0 - MikroElektronika"/>
-<meta property="og:image" content="https://cdn-shop.mikroe.com/img/cms/mikroe-logo-1200x630.jpg"/>
-<meta property="og:site_name" content="MikroElektronika"/>
-<meta property="og:description" content="MikroElektronika produces a wide range of development tools, compilers and books for various microcontroller families."/>
-<meta property="og:url" content="http://www.mikroe.com/ebooks/pic-microcontrollers-programming-in-c/timer-tmr0"/>
+<link rel="stylesheet" href="../../../cdn.mikroe.com/themes/simplicity/css/OverlayScrollbars.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="../../themes/me-simplicity/css/A.global.css_qv_1639046148_my-account.css_qv_1616583168_mmenu.css_qv_1565777516_Mcc.o_UpcHv037.css.pagespeed.cf.iq-yPnwDJX.css" type="text/css" media="all">
+<link rel="stylesheet" href="../../../cdn.mikroe.com/themes/simplicity/css/jquery/jquery-confirm.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="/A.themes,,_me-simplicity,,_css,,_autoload,,_company-history.css,,qv==1550850948+themes,,_me-simplicity,,_css,,_autoload,,_distributors.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_autoload,,_flag-icon.min.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_autoload,,_font-awesome-animation.min.css,,qv==1482495456+themes,,_me-simplicity,,_css,,_autoload,,_highdpi.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_autoload,,_me-localnav.css,,qv==1550850948+themes,,_me-simplicity,,_css,,_autoload,,_me-search.css,,qv==1597131637+themes,,_me-simplicity,,_css,,_autoload,,_responsive-tables.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_autoload,,_suggestion-box.css,,qv==1563463259+themes,,_me-simplicity,,_css,,_autoload,,_uniform.default.css,,qv==1600849880+themes,,_me-simplicity,,_css,,_product_list.css,,qv==1597159154+modules,,_cmsproducts,,_cmsproducts.css,,qv==1512203431+themes,,_me-simplicity,,_css,,_cms_v3.css,,qv==1639144997,Mcc.YYjRW3Q7eV.css.pagespeed.cf.MMSmkQTDz5.css" type="text/css" media="all">
+<link rel="stylesheet" href="/A.themes,,_me-simplicity,,_css,,_slick.css,,qv==1550850948+themes,,_me-simplicity,,_css,,_simplelightbox.css,,qv==1577456456+themes,,_me-simplicity,,_css,,_select2.min.css,,qv==1541070326+modules,,_prestablog,,_views,,_css,,_grid-for-1-6-module.css,,qv==1638177482+themes,,_me-simplicity,,_css,,_modules,,_flashsalepro,,_views,,_front.css,,qv==1550850948+themes,,_me-simplicity,,_css,,_modules,,_flashsalepro,,_views,,_slick.css,,qv==1486477169+themes,,_me-simplicity,,_css,,_modules,,_flashsalepro,,_views,,_flipclock.css,,qv==1573547947+themes,,_me-simplicity,,_css,,_modules,,_blockbanner,,_blockbanner.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blockbestsellers,,_blockbestsellers.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blockcart,,_blockcart.css,,qv==1550850948+js,,_jquery,,_plugins,,_bxslider,,_jquery.bxslider.css,,qv==1521133368+themes,,_me-simplicity,,_css,,_modules,,_blockcurrencies,,_blockcurrencies.css,,qv==1475700643,Mcc.px-73-j-k0.css.pagespeed.cf.6lbwC6AWAZ.css" type="text/css" media="all">
+<link rel="stylesheet" href="/A.themes,,_me-simplicity,,_css,,_modules,,_blocklanguages,,_blocklanguages.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blocknewproducts,,_blocknewproducts.css,,qv==1551970430+themes,,_me-simplicity,,_css,,_modules,,_blocknewsletter,,_blocknewsletter.css,,qv==1527245543+themes,,_me-simplicity,,_css,,_modules,,_blocktags,,_blocktags.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blockuserinfo,,_blockuserinfo.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blockviewed,,_blockviewed.css,,qv==1597050628+themes,,_me-simplicity,,_css,,_modules,,_blocktopmenu,,_css,,_blocktopmenu.css,,qv==1475700643+themes,,_me-simplicity,,_css,,_modules,,_blocktopmenu,,_css,,_superfish-modified.css,,qv==1475700643+modules,,_advancedeucompliance,,_views,,_css,,_aeuc_front.css,,qv==1475700643,Mcc.pblNVXf7Dg.css.pagespeed.cf.YY_q9fNRf-.css" type="text/css" media="all">
+<link rel="stylesheet" href="//cdn.mikroe.com/theme/fonts/geogrotesque/geogrotesque-normal.css" type="text/css" media="all">
+<link rel="stylesheet" href="//cdn.mikroe.com/themes/simplicity/fonts/simplicity-icons/css/me-simplicity-icons.css" type="text/css" media="all">
+<link rel="stylesheet" href="//cdn.mikroe.com/themes/simplicity/fonts/font-awesome/css/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="//cdn.mikroe.com/themes/simplicity/fonts/absolut_pro/absolut_pro.css" type="text/css" media="all">
+<link rel="stylesheet" href="//cdn.mikroe.com/fontawesome-pro/css/all.css" type="text/css" media="all">
+<link rel="stylesheet" href="/A.modules,,_blockyoutubevideos,,_views,,_css,,_front.css,,qv==1470212952+modules,,_mikroedropcart,,_views,,_css,,_bootstrap.min.css,,qv==1475700643+modules,,_mikroedropcart,,_views,,_css,,_front.css,,qv==1550850948+themes,,_me-simplicity,,_css,,_modules,,_gsnipreview,,_views,,_css,,_gsnipreview.css,,qv==1550850948+modules,,_mikroeshoppicker,,_views,,_css,,_front.css,,qv==1550850948+modules,,_contentrevolution,,_views,,_css,,_owl.carousel.css,,qv==1477485235+modules,,_contentrevolution,,_views,,_css,,_nivo-slider.css,,qv==1477485235+modules,,_contentrevolution,,_views,,_css,,_contentrevolution.css,,qv==1537200594+modules,,_mikroelocalnav,,_views,,_css,,_front.css,,qv==1550850948+modules,,_mikroeajaxproducts,,_views,,_css,,_front.css,,qv==1482136928+modules,,_mikroeproductstatus,,_views,,_css,,_front.css,,qv==1550850948+modules,,_mikroesupportedmcus,,_views,,_css,,_front.css,,qv==1499429708+modules,,_mikroecachecleaner,,_views,,_css,,_front.css,,qv==1500536627,Mcc.SH5iwRomCI.css.pagespeed.cf.MqTOnsrJ-F.css" type="text/css" media="all">
+<link rel="stylesheet" href="/modules/A.mikroecmsebookstoc,,_views,,_css,,_front.css,,qv==1512202869+mikroeredireciotns,,_views,,_css,,_front.css,,qv==1512203289+mikroelandingpage,,_views,,_css,,_front.css,,qv==1638349216+mikroecustomization,,_views,,_css,,_front.css,,qv==1526660107+pscookiebanner,,_views,,_css,,_jquery-eu-cookie-law-popup.css,,qv==1618481616+mikroecarrieradditionalpayment,,_views,,_css,,_front.css,,qv==1545316486+mikroecategories,,_views,,_css,,_front.css,,qv==1635937524+mikroeproductbuilders,,_views,,_css,,_front.css,,qv==1603350942+mikroecartruleincrementer,,_views,,_css,,_front.css,,qv==1617270961+mikroeraiffeisenpayments,,_views,,_css,,_front.css,,qv==1597050627+mikroeplanetdebug,,_views,,_css,,_front.css,,qv==1635954370+mikroetwocheckoutconvertplus,,_views,,_css,,_front.css,,qv==1610443366+unpaidordernotifier,,_views,,_css,,_front.css,,qv==1623156206,Mcc.kYLZCdkEyo.css.pagespeed.cf.rvbbR5d5n7.css" type="text/css" media="all">
+<link rel="stylesheet" href="/A.themes,,_me-simplicity,,_css,,_backdrop.css,,qv==1571040798+js,,_jquery,,_ui,,_themes,,_base,,_jquery.ui.core.css,,qv==1475700643+js,,_jquery,,_ui,,_themes,,_base,,_jquery.ui.datepicker.css,,qv==1475700643+js,,_jquery,,_ui,,_themes,,_base,,_jquery.ui.theme.css,,qv==1475700643,Mcc.Y9s6apkK4d.css.pagespeed.cf.SNQ-UXGhVk.css" type="text/css" media="all">
+<meta property="og:type" content="website">
+<meta property="og:title" content="timer-tmr0 - MikroElektronika">
+<meta property="og:image" content="https://cdn-shop.mikroe.com/img/cms/mikroe-logo-1200x630.jpg">
+<meta property="og:site_name" content="MikroElektronika">
+<meta property="og:description" content="MikroElektronika produces a wide range of development tools, compilers and books for various microcontroller families.">
+<meta property="og:url" content="http://www.mikroe.com/ebooks/pic-microcontrollers-programming-in-c/timer-tmr0">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@mikroel">
 <meta name="twitter:creator" content="@mikroel">
@@ -76,14 +76,14 @@ dataLayer.push({
 <meta name="twitter:image" content="https://cdn-shop.mikroe.com/img/cms/mikroe-logo-1200x630.jpg">
 <style type="text/css">.padding-left-logins{padding-left:2px!important;margin:0!important}.header_user_info_ps16{float:right;padding:9px}.img-top-custom{margin-top:12px;border-radius:3px}.clear{clear:both}.text-align-center{text-align:center}.auth-page-txt-before-logins{font-weight:bold;color:#555454}.padding-top-10{padding-top:10px}.auth-page-txt-info-block{text-align:center;margin-top:20px;font-weight:bold;color:#555454}.wrap a,#socialConnectSpm a{text-decoration:none;opacity:1}.wrap a:hover,#socialConnectSpm a:hover{text-decoration:none;opacity:.7}.fbtwgblock-columns15{margin-top:10px;margin-left:10px}.fbtwgblock-columns{margin-top:10px}.fbtwgblock-columns15 a{float:left;margin-top:10px;margin-right:5px;opacity:1}.fbtwgblock-columns15 a:hover{float:left;margin-top:10px;margin-right:5px;opacity:.7}.fbtwgblock-columns15 a.multilogin-last{margin-right:0!important}.fbtwgblock-columns a{float:left;margin-top:10px;margin-right:5px;opacity:1}.fbtwgblock-columns a:hover{float:left;margin-top:10px;margin-right:5px;opacity:.7}.fbtwgblock-columns a.multilogin-last{margin-right:0!important}a.multilogin-log-in:hover{opacity:.7}a.multilogin-log-in{opacity:1}</style>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" media="all">
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,900,500,300,100,700' rel='stylesheet' type='text/css' media="all"/>
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,900,500,300,100,700' rel='stylesheet' type='text/css' media="all"/>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=latin,latin-ext" rel='stylesheet' type='text/css' media="all"/>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,500&amp;subset=latin-ext" rel='stylesheet' type='text/css' media="all"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,900,500,300,100,700" rel="stylesheet" type="text/css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900,500,300,100,700" rel="stylesheet" type="text/css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CRoboto:300,500&amp;subset=latin-ext" rel="stylesheet" type="text/css" media="all">
 </head>
 <body style="margin: 0;" id="cms" class="cms cms-597 cms-timer-tmr0 show-left-column hide-right-column lang_en">
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VM2THH&nojscript=true" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<link rel="stylesheet" type="text/css" href="https://cdn.mikroe.com/fontawesome-pro/css/font-awesome-animation.css"/>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VM2THH&amp;nojscript=true" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<link rel="stylesheet" type="text/css" href="https://cdn.mikroe.com/fontawesome-pro/css/font-awesome-animation.css">
 <div id="mmenu-top" style="display: none;">
 <a class="logo-img" href="https://www.mikroe.com"><img class="img-responsive" src="//cdn.mikroe.com/img/mega-menu/mikroe-timesaving-white.png" itemprop="logo" alt="MikroElektronika white logo"></a>
 <i id="mm-open" class="fal fa-bars"></i>
@@ -1379,7 +1379,7 @@ dataLayer.push({
 <ul>
 <li><a href="https://www.mikroe.com/smart-displays?architecture*=pic-8-bit,pic-8-bit">PIC</a>
 <ul>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=pic-8-bit,pic-8-bit&amp;display-size*=28,28">2.8&quot;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=pic-8-bit,pic-8-bit&amp;display-size*=28,28">2.8"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-3-pic18fj">PIC 18FJ</a>
 </li>
@@ -1387,7 +1387,7 @@ dataLayer.push({
 </li>
 </ul>
 </li>
-<li><a href="https://www.mikroe.com/smart-displays/mikromedia/mikromedia-35?architecture*=pic-8-bit,pic-8-bit">3.5&quot;</a>
+<li><a href="https://www.mikroe.com/smart-displays/mikromedia/mikromedia-35?architecture*=pic-8-bit,pic-8-bit">3.5"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-3-for-pic-capacitive-fpi-with-bezel">PIC Cap. FPI with bezel</a>
 </li>
@@ -1397,7 +1397,7 @@ dataLayer.push({
 </li>
 </ul>
 </li>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=pic-8-bit,pic-8-bit&amp;display-size*=43,43">4.3&quot;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=pic-8-bit,pic-8-bit&amp;display-size*=43,43">4.3"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-4-for-pic-capacitive-fpi-with-bezel">PIC Cap. FPI bezel</a>
 </li>
@@ -1413,7 +1413,7 @@ dataLayer.push({
 </li>
 <li><a href="https://www.mikroe.com/smart-displays?architecture*=arm-32-bit,arm-32-bit">ARM</a>
 <ul>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=28,28">2.8&#039;&#039;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=28,28">2.8''</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-3-stm32f4">STM32 M4</a>
 </li>
@@ -1425,7 +1425,7 @@ dataLayer.push({
 </li>
 </ul>
 </li>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=35">3.5&#039;&#039;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=35">3.5''</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-3-for-tiva-capacitive">TIVA Capacitive</a>
 </li>
@@ -1449,7 +1449,7 @@ dataLayer.push({
 </li>
 </ul>
 </li>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=43,43">4.3&#039;&#039;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=43,43">4.3''</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-4-for-stm32f2-capacitive-fpi-with-frame">STM32F2 Cap. FPI - frame</a>
 </li>
@@ -1479,7 +1479,7 @@ dataLayer.push({
 </li>
 </ul>
 </li>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=5,5">5&#039;&#039;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=5,5">5''</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-5-for-stm32f7-capacitive-fpi-with-frame">STM32F7 Cap. FPI - frame</a>
 </li>
@@ -1505,7 +1505,7 @@ dataLayer.push({
 </li>
 </ul>
 </li>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=7,7">7&#039;&#039;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=7,7">7''</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-7-capacitive-fpi-with-frame">Capacitive FPI with frame</a>
 </li>
@@ -1523,19 +1523,19 @@ dataLayer.push({
 </li>
 <li><a href="https://www.mikroe.com/smart-displays?architecture*=pic32-32-bit,pic32-32-bit">PIC32</a>
 <ul>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=pic32-32-bit,pic32-32-bit&amp;display-size*=28,28">2.8&quot;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=pic32-32-bit,pic32-32-bit&amp;display-size*=28,28">2.8"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-3-pic32mx4">PIC32 MX4</a>
 </li>
 </ul>
 </li>
-<li><a href="https://www.mikroe.com/smart-displays/mikromedia?architecture*=pic32-32-bit,pic32-32-bit">3.5&quot;</a>
+<li><a href="https://www.mikroe.com/smart-displays/mikromedia?architecture*=pic32-32-bit,pic32-32-bit">3.5"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-3-for-pic32mz-capacitive">PIC32MZ Cap.</a>
 </li>
 </ul>
 </li>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=pic32-32-bit,pic32-32-bit&amp;display-size*=43,43">4.3&quot;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=pic32-32-bit,pic32-32-bit&amp;display-size*=43,43">4.3"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-4-for-pic32mz-capacitive-fpi-with-frame">PIC32 Cap. FPI frame</a>
 </li>
@@ -1545,7 +1545,7 @@ dataLayer.push({
 </li>
 </ul>
 </li>
-<li><a href="">5&quot;</a>
+<li><a href="">5"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-5-for-pic32mz-capacitive">PIC32MZ Cap.</a>
 </li>
@@ -1555,7 +1555,7 @@ dataLayer.push({
 </li>
 <li><a href="https://www.mikroe.com/smart-displays?architecture*=dspic-pic24-16-bit,dspic-pic24-16-bit">dsPIC/PIC24</a>
 <ul>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=dspic-pic24-16-bit,dspic-pic24-16-bit&amp;display-size*=28,28">2.8&quot;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=dspic-pic24-16-bit,dspic-pic24-16-bit&amp;display-size*=28,28">2.8"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-3-dspic33fj">dsPIC 33FJ</a>
 </li>
@@ -1571,7 +1571,7 @@ dataLayer.push({
 </li>
 <li><a href="https://www.mikroe.com/smart-displays?architecture*=avr-8-bit,avr-8-bit">AVR</a>
 <ul>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=avr-8-bit,avr-8-bit&amp;display-size*=28,28">2.8&#039;&#039;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=avr-8-bit,avr-8-bit&amp;display-size*=28,28">2.8''</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-3-xmega">XMEGA</a>
 </li>
@@ -1581,7 +1581,7 @@ dataLayer.push({
 </li>
 <li><a href="https://www.mikroe.com/smart-displays?architecture*=ft90x-32-bit,ft90x-32-bit">FT90x</a>
 <ul>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=35,35">3.5&quot;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=35,35">3.5"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-hmi-35-no-touch">HMI No Touch</a>
 </li>
@@ -1591,7 +1591,7 @@ dataLayer.push({
 </li>
 </ul>
 </li>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=43,43">4.3&quot;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=43,43">4.3"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-hmi-43-no-touch">HMI</a>
 </li>
@@ -1607,7 +1607,7 @@ dataLayer.push({
 </li>
 </ul>
 </li>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=5,5">5&quot;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=5,5">5"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-hmi-50-no-touch">HMI</a>
 </li>
@@ -1621,7 +1621,7 @@ dataLayer.push({
 </li>
 </ul>
 </li>
-<li><a href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=7,7">7&quot;</a>
+<li><a href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=7,7">7"</a>
 <ul>
 <li><a href="https://www.mikroe.com/mikromedia-hmi-70-no-touch">HMI</a>
 </li>
@@ -1859,27 +1859,27 @@ dataLayer.push({
 </li>
 <li><a href="https://www.mikroe.com/kits/tft-designer-kits?architecture*=arm-32-bit,arm-32-bit">TFT Designer Kits</a>
 <ul>
-<li><a href="https://www.mikroe.com/tft-3-designer-kit-tiva">TFT 3&quot; - TIVA</a>
+<li><a href="https://www.mikroe.com/tft-3-designer-kit-tiva">TFT 3" - TIVA</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-4-designer-kit-stm32f4">TFT 4&quot; - STM32F4</a>
+<li><a href="https://www.mikroe.com/tft-4-designer-kit-stm32f4">TFT 4" - STM32F4</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-5-designer-kit-tiva">TFT 5&quot; - TIVA</a>
+<li><a href="https://www.mikroe.com/tft-5-designer-kit-tiva">TFT 5" - TIVA</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-7-designer-kit-stm32f4">TFT 7&quot; - STM32F4</a>
+<li><a href="https://www.mikroe.com/tft-7-designer-kit-stm32f4">TFT 7" - STM32F4</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-3-designer-kit-stm32f3">TFT 3&quot; - STM32 M3</a>
+<li><a href="https://www.mikroe.com/tft-3-designer-kit-stm32f3">TFT 3" - STM32 M3</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-3-designer-kit-stm32f4">TFT 3&quot; - STM32 M4</a>
+<li><a href="https://www.mikroe.com/tft-3-designer-kit-stm32f4">TFT 3" - STM32 M4</a>
 </li>
 </ul>
 </li>
 <li><a href="https://www.mikroe.com/kits/tft-developer-kits?architecture*=arm-32-bit,arm-32-bit">TFT Developer Kits</a>
 <ul>
-<li><a href="https://www.mikroe.com/tft-3-developer-kit-tiva">TFT 3&quot; - TIVA</a>
+<li><a href="https://www.mikroe.com/tft-3-developer-kit-tiva">TFT 3" - TIVA</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-3-developer-kit-stm32f3">TFT 3&quot; - STM32F3</a>
+<li><a href="https://www.mikroe.com/tft-3-developer-kit-stm32f3">TFT 3" - STM32F3</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-3-developer-kit-stm32f4">TFT 3&quot; - STM32F4</a>
+<li><a href="https://www.mikroe.com/tft-3-developer-kit-stm32f4">TFT 3" - STM32F4</a>
 </li>
 </ul>
 </li>
@@ -1913,15 +1913,15 @@ dataLayer.push({
 </li>
 <li><a href="https://www.mikroe.com/kits/tft-designer-kits?architecture*=pic32-32-bit,pic32-32-bit">TFT Designer Kits</a>
 <ul>
-<li><a href="https://www.mikroe.com/tft-3-designer-kit-pic32mx4">TFT 3&quot; - PIC32MX4</a>
+<li><a href="https://www.mikroe.com/tft-3-designer-kit-pic32mx4">TFT 3" - PIC32MX4</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-4-designer-kit-pic32mx7">TFT 4&quot; - PIC32MX7</a>
+<li><a href="https://www.mikroe.com/tft-4-designer-kit-pic32mx7">TFT 4" - PIC32MX7</a>
 </li>
 </ul>
 </li>
 <li><a href="https://www.mikroe.com/kits/tft-developer-kits?architecture*=pic32-32-bit,pic32-32-bit">TFT Developer Kits</a>
 <ul>
-<li><a href="https://www.mikroe.com/tft-3-developer-kit-pic32mx4">TFT 3&quot; - PIC32MX4</a>
+<li><a href="https://www.mikroe.com/tft-3-developer-kit-pic32mx4">TFT 3" - PIC32MX4</a>
 </li>
 </ul>
 </li>
@@ -1959,25 +1959,25 @@ dataLayer.push({
 </li>
 <li><a href="https://www.mikroe.com/kits/tft-designer-kits?architecture*=dspic-pic24-16-bit,dspic-pic24-16-bit">TFT Designer Kits</a>
 <ul>
-<li><a href="https://www.mikroe.com/tft-3-designer-kit-dspic33fj">TFT 3&quot; - dsPIC33FJ</a>
+<li><a href="https://www.mikroe.com/tft-3-designer-kit-dspic33fj">TFT 3" - dsPIC33FJ</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-3-designer-kit-dspic33ep">TFT 3&quot; - dsPIC33EP</a>
+<li><a href="https://www.mikroe.com/tft-3-designer-kit-dspic33ep">TFT 3" - dsPIC33EP</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-3-designer-kit-pic24ep">TFT 3&quot; - PIC24EP</a>
+<li><a href="https://www.mikroe.com/tft-3-designer-kit-pic24ep">TFT 3" - PIC24EP</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-3-designer-kit-pic24fj">TFT 3&quot; - PIC24FJ</a>
+<li><a href="https://www.mikroe.com/tft-3-designer-kit-pic24fj">TFT 3" - PIC24FJ</a>
 </li>
 </ul>
 </li>
 <li><a href="https://www.mikroe.com/kits/tft-developer-kits?architecture*=dspic-pic24-16-bit,dspic-pic24-16-bit">TFT Developer Kits</a>
 <ul>
-<li><a href="https://www.mikroe.com/tft-3-developer-kit-dspic33fj">TFT 3&quot; - dsPIC33FJ</a>
+<li><a href="https://www.mikroe.com/tft-3-developer-kit-dspic33fj">TFT 3" - dsPIC33FJ</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-3-developer-kit-pic24fj">TFT 3&quot; - PIC24FJ</a>
+<li><a href="https://www.mikroe.com/tft-3-developer-kit-pic24fj">TFT 3" - PIC24FJ</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-3-developer-kit-pic24ep">TFT 3&quot; - PIC24EP</a>
+<li><a href="https://www.mikroe.com/tft-3-developer-kit-pic24ep">TFT 3" - PIC24EP</a>
 </li>
-<li><a href="https://www.mikroe.com/tft-3-developer-kit-dspic33ep">TFT 3&quot; - dsPIC33EP</a>
+<li><a href="https://www.mikroe.com/tft-3-developer-kit-dspic33ep">TFT 3" - dsPIC33EP</a>
 </li>
 </ul>
 </li>
@@ -2053,7 +2053,7 @@ dataLayer.push({
 </li>
 <li><a href="https://www.mikroe.com/blog/category/learn">Learn</a>
 </li>
-<li><a href="https://www.mikroe.com/blog/category/let-s-make">Let&#039;s make</a>
+<li><a href="https://www.mikroe.com/blog/category/let-s-make">Let's make</a>
 </li>
 <li><a href="https://www.mikroe.com/ebooks">Books</a>
 </li>
@@ -2086,7 +2086,7 @@ dataLayer.push({
 </ul>
 </div>
 <div id="panel-cart">
-<p style="text-align: center; padding-top: 30px;">Your shoppingcart is empty.<br/>
+<p style="text-align: center; padding-top: 30px;">Your shoppingcart is empty.<br>
 <a href="#/">Continue shopping.</a></p>
 </div>
 </nav>
@@ -2105,7 +2105,7 @@ dataLayer.push({
 <div>
 <div>
 <li class="click boards   level2LI">
-<a class="icon" href="https://www.mikroe.com/click"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1561649534_dynamicmenu_link.png" alt="click boards icon"/> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="17" data-category-id="231" href="https://www.mikroe.com/click"> Click Boards
+<a class="icon" href="https://www.mikroe.com/click"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1561649534_dynamicmenu_link.png" alt="click boards icon"> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="17" data-category-id="231" href="https://www.mikroe.com/click"> Click Boards
 </a>
 <ul style="display: none;" class="level-2">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -2769,7 +2769,7 @@ dataLayer.push({
 </ul>
 </li>
 <li class="necto   level2LI">
-<a class="icon" href="https://mikroe.com/necto"> <img src="//cdn-shop.mikroe.com/img/dynamic_menu/1576064644_dynamicmenu_link.png" alt="necto icon"/> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="919" data-category-id="166" href="https://mikroe.com/necto"> Necto
+<a class="icon" href="https://mikroe.com/necto"> <img src="//cdn-shop.mikroe.com/img/dynamic_menu/1576064644_dynamicmenu_link.png" alt="necto icon"> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="919" data-category-id="166" href="https://mikroe.com/necto"> Necto
 </a>
 <ul style="display: none;" class="level-2">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -3001,7 +3001,7 @@ dataLayer.push({
 </ul>
 </li>
 <li class="compilers   level2LI">
-<a class="icon" href="https://www.mikroe.com/compilers"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1563360846_dynamicmenu_link.png" alt="compilers icon"/> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="19" data-category-id="166" href="https://www.mikroe.com/compilers"> Compilers
+<a class="icon" href="https://www.mikroe.com/compilers"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1563360846_dynamicmenu_link.png" alt="compilers icon"> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="19" data-category-id="166" href="https://www.mikroe.com/compilers"> Compilers
 </a>
 <ul style="display: none;" class="level-2">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -3825,7 +3825,7 @@ dataLayer.push({
 </ul>
 </li>
 <li class="dev boards   level2LI">
-<a class="icon" href="https://www.mikroe.com/development-boards"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1563360569_dynamicmenu_link.png" alt="dev boards icon"/> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="15" data-category-id="330" href="https://www.mikroe.com/development-boards"> Dev Boards
+<a class="icon" href="https://www.mikroe.com/development-boards"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1563360569_dynamicmenu_link.png" alt="dev boards icon"> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="15" data-category-id="330" href="https://www.mikroe.com/development-boards"> Dev Boards
 </a>
 <ul style="display: none;" class="level-2">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -4365,7 +4365,7 @@ dataLayer.push({
 </ul>
 </li>
 <li class="starter boards   level2LI">
-<a class="icon" href="https://www.mikroe.com/starter-boards"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1563360681_dynamicmenu_link.png" alt="starter boards icon"/> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="16" data-category-id="172" href="https://www.mikroe.com/starter-boards"> Starter Boards
+<a class="icon" href="https://www.mikroe.com/starter-boards"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1563360681_dynamicmenu_link.png" alt="starter boards icon"> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="16" data-category-id="172" href="https://www.mikroe.com/starter-boards"> Starter Boards
 </a>
 <ul style="display: none;" class="level-2">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -4969,7 +4969,7 @@ dataLayer.push({
 </ul>
 </li>
 <li class="prog-debug   level2LI">
-<a class="icon" href="https://www.mikroe.com/debuggers"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1561649567_dynamicmenu_link.png" alt="prog-debug icon"/> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="18" data-category-id="170" href="https://www.mikroe.com/debuggers"> Prog-Debug
+<a class="icon" href="https://www.mikroe.com/debuggers"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1561649567_dynamicmenu_link.png" alt="prog-debug icon"> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="18" data-category-id="170" href="https://www.mikroe.com/debuggers"> Prog-Debug
 </a>
 <ul style="display: none;" class="level-2">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5241,7 +5241,7 @@ dataLayer.push({
 </ul>
 </li>
 <li class="smart displays   level2LI">
-<a class="icon" href="https://www.mikroe.com/smart-displays"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1561649580_dynamicmenu_link.png" alt="smart displays icon"/> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="20" data-category-id="173" href="https://www.mikroe.com/smart-displays"> Smart Displays
+<a class="icon" href="https://www.mikroe.com/smart-displays"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1561649580_dynamicmenu_link.png" alt="smart displays icon"> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="20" data-category-id="173" href="https://www.mikroe.com/smart-displays"> Smart Displays
 </a>
 <ul style="display: none;" class="level-2">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5254,8 +5254,8 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="2.8&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="533" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=pic-8-bit,pic-8-bit&amp;display-size*=28,28"> 2.8&quot;
+<li class='2.8"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="533" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=pic-8-bit,pic-8-bit&amp;display-size*=28,28"> 2.8"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5274,8 +5274,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="3.5&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="1019" data-category-id="173" href="https://www.mikroe.com/smart-displays/mikromedia/mikromedia-35?architecture*=pic-8-bit,pic-8-bit"> 3.5&quot;
+<li class='3.5"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="1019" data-category-id="173" href="https://www.mikroe.com/smart-displays/mikromedia/mikromedia-35?architecture*=pic-8-bit,pic-8-bit"> 3.5"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5298,8 +5298,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="4.3&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="534" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=pic-8-bit,pic-8-bit&amp;display-size*=43,43"> 4.3&quot;
+<li class='4.3"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="534" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=pic-8-bit,pic-8-bit&amp;display-size*=43,43"> 4.3"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5338,8 +5338,8 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="2.8&#039;&#039;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="122" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=28,28"> 2.8&#039;&#039;
+<li class="2.8''  ">
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="122" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=28,28"> 2.8''
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5366,8 +5366,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="3.5&#039;&#039;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="674" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=35"> 3.5&#039;&#039;
+<li class="3.5''  ">
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="674" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=35"> 3.5''
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5418,8 +5418,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="4.3&#039;&#039;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="123" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=43,43"> 4.3&#039;&#039;
+<li class="4.3''  ">
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="123" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=43,43"> 4.3''
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5482,8 +5482,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="5&#039;&#039;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="124" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=5,5"> 5&#039;&#039;
+<li class="5''  ">
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="124" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=5,5"> 5''
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5538,8 +5538,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="7&#039;&#039;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="125" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=7,7"> 7&#039;&#039;
+<li class="7''  ">
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="125" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=arm-32-bit,arm-32-bit&amp;display-size*=7,7"> 7''
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5582,8 +5582,8 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="2.8&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="538" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=pic32-32-bit,pic32-32-bit&amp;display-size*=28,28"> 2.8&quot;
+<li class='2.8"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="538" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=pic32-32-bit,pic32-32-bit&amp;display-size*=28,28"> 2.8"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5598,8 +5598,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="3.5&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="1026" data-category-id="173" href="https://www.mikroe.com/smart-displays/mikromedia?architecture*=pic32-32-bit,pic32-32-bit"> 3.5&quot;
+<li class='3.5"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="1026" data-category-id="173" href="https://www.mikroe.com/smart-displays/mikromedia?architecture*=pic32-32-bit,pic32-32-bit"> 3.5"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5614,8 +5614,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="4.3&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="539" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=pic32-32-bit,pic32-32-bit&amp;display-size*=43,43"> 4.3&quot;
+<li class='4.3"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="539" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=pic32-32-bit,pic32-32-bit&amp;display-size*=43,43"> 4.3"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5638,8 +5638,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="5&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="1023" data-category-id="173" href=""> 5&quot;
+<li class='5"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="1023" data-category-id="173" href=""> 5"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5666,8 +5666,8 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="2.8&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="542" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=dspic-pic24-16-bit,dspic-pic24-16-bit&amp;display-size*=28,28"> 2.8&quot;
+<li class='2.8"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="542" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=dspic-pic24-16-bit,dspic-pic24-16-bit&amp;display-size*=28,28"> 2.8"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5706,8 +5706,8 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="2.8&#039;&#039;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="530" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=avr-8-bit,avr-8-bit&amp;display-size*=28,28"> 2.8&#039;&#039;
+<li class="2.8''  ">
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="530" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=avr-8-bit,avr-8-bit&amp;display-size*=28,28"> 2.8''
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5734,8 +5734,8 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="3.5&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="547" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=35,35"> 3.5&quot;
+<li class='3.5"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="547" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=35,35"> 3.5"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5758,8 +5758,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="4.3&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="548" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=43,43"> 4.3&quot;
+<li class='4.3"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="548" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=43,43"> 4.3"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5794,8 +5794,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="5&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="549" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=5,5"> 5&quot;
+<li class='5"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="549" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=5,5"> 5"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5826,8 +5826,8 @@ dataLayer.push({
 </div>
 </ul>
 </li>
-<li class="7&quot;  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="550" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=7,7"> 7&quot;
+<li class='7"  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="550" data-category-id="173" href="https://www.mikroe.com/smart-displays?architecture=ft90x-32-bit,ft90x-32-bit&amp;display-size*=7,7"> 7"
 </a>
 <ul style="display: none;" class="level-4">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5869,7 +5869,7 @@ dataLayer.push({
 </ul>
 </li>
 <li class="mcu cards   level2LI">
-<a class="icon" href="https://www.mikroe.com/mcu-cards"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1563360947_dynamicmenu_link.png" alt="mcu cards icon"/> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="21" data-category-id="208" href="https://www.mikroe.com/mcu-cards"> MCU Cards
+<a class="icon" href="https://www.mikroe.com/mcu-cards"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1563360947_dynamicmenu_link.png" alt="mcu cards icon"> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="21" data-category-id="208" href="https://www.mikroe.com/mcu-cards"> MCU Cards
 </a>
 <ul style="display: none;" class="level-2">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -5985,7 +5985,7 @@ dataLayer.push({
 </ul>
 </li>
 <li class="accessories   level2LI">
-<a class="icon" href="https://www.mikroe.com/accessories"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1561649598_dynamicmenu_link.png" alt="accessories icon"/> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="22" data-category-id="192" href="https://www.mikroe.com/accessories"> Accessories
+<a class="icon" href="https://www.mikroe.com/accessories"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1561649598_dynamicmenu_link.png" alt="accessories icon"> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="22" data-category-id="192" href="https://www.mikroe.com/accessories"> Accessories
 </a>
 <ul style="display: none;" class="level-2">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -6209,7 +6209,7 @@ dataLayer.push({
 </ul>
 </li>
 <li class="kits   level2LI">
-<a class="icon" href="https://www.mikroe.com/kits"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1561650097_dynamicmenu_link.png" alt="kits icon"/> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="24" data-category-id="164" href="https://www.mikroe.com/kits"> Kits
+<a class="icon" href="https://www.mikroe.com/kits"> <img src="https://cdn-shop.mikroe.com/img/dynamic_menu/1561650097_dynamicmenu_link.png" alt="kits icon"> </a>	<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="24" data-category-id="164" href="https://www.mikroe.com/kits"> Kits
 </a>
 <ul style="display: none;" class="level-2">
 <div class="menu-wrap tse-scrollable wrapper  ">
@@ -6393,28 +6393,28 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="tft 3&quot; - tiva  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="317" data-category-id="188" data-product-id="1269" href="https://www.mikroe.com/tft-3-designer-kit-tiva"> TFT 3&quot; - TIVA
+<li class='tft 3" - tiva  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="317" data-category-id="188" data-product-id="1269" href="https://www.mikroe.com/tft-3-designer-kit-tiva"> TFT 3" - TIVA
 </a>
 </li>
-<li class="tft 4&quot; - stm32f4  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="318" data-category-id="188" data-product-id="1144" href="https://www.mikroe.com/tft-4-designer-kit-stm32f4"> TFT 4&quot; - STM32F4
+<li class='tft 4" - stm32f4  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="318" data-category-id="188" data-product-id="1144" href="https://www.mikroe.com/tft-4-designer-kit-stm32f4"> TFT 4" - STM32F4
 </a>
 </li>
-<li class="tft 5&quot; - tiva  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="319" data-category-id="188" data-product-id="1224" href="https://www.mikroe.com/tft-5-designer-kit-tiva"> TFT 5&quot; - TIVA
+<li class='tft 5" - tiva  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="319" data-category-id="188" data-product-id="1224" href="https://www.mikroe.com/tft-5-designer-kit-tiva"> TFT 5" - TIVA
 </a>
 </li>
-<li class="tft 7&quot; - stm32f4  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="320" data-category-id="188" data-product-id="1477" href="https://www.mikroe.com/tft-7-designer-kit-stm32f4"> TFT 7&quot; - STM32F4
+<li class='tft 7" - stm32f4  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="320" data-category-id="188" data-product-id="1477" href="https://www.mikroe.com/tft-7-designer-kit-stm32f4"> TFT 7" - STM32F4
 </a>
 </li>
-<li class="tft 3&quot; - stm32 m3  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="321" data-category-id="188" data-product-id="957" href="https://www.mikroe.com/tft-3-designer-kit-stm32f3"> TFT 3&quot; - STM32 M3
+<li class='tft 3" - stm32 m3  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="321" data-category-id="188" data-product-id="957" href="https://www.mikroe.com/tft-3-designer-kit-stm32f3"> TFT 3" - STM32 M3
 </a>
 </li>
-<li class="tft 3&quot; - stm32 m4  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="322" data-category-id="188" data-product-id="961" href="https://www.mikroe.com/tft-3-designer-kit-stm32f4"> TFT 3&quot; - STM32 M4
+<li class='tft 3" - stm32 m4  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="322" data-category-id="188" data-product-id="961" href="https://www.mikroe.com/tft-3-designer-kit-stm32f4"> TFT 3" - STM32 M4
 </a>
 </li>
 </div>
@@ -6429,16 +6429,16 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="tft 3&quot; - tiva  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="325" data-category-id="189" data-product-id="1268" href="https://www.mikroe.com/tft-3-developer-kit-tiva"> TFT 3&quot; - TIVA
+<li class='tft 3" - tiva  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="325" data-category-id="189" data-product-id="1268" href="https://www.mikroe.com/tft-3-developer-kit-tiva"> TFT 3" - TIVA
 </a>
 </li>
-<li class="tft 3&quot; - stm32f3  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="326" data-category-id="189" data-product-id="956" href="https://www.mikroe.com/tft-3-developer-kit-stm32f3"> TFT 3&quot; - STM32F3
+<li class='tft 3" - stm32f3  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="326" data-category-id="189" data-product-id="956" href="https://www.mikroe.com/tft-3-developer-kit-stm32f3"> TFT 3" - STM32F3
 </a>
 </li>
-<li class="tft 3&quot; - stm32f4  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="324" data-category-id="189" data-product-id="960" href="https://www.mikroe.com/tft-3-developer-kit-stm32f4"> TFT 3&quot; - STM32F4
+<li class='tft 3" - stm32f4  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="324" data-category-id="189" data-product-id="960" href="https://www.mikroe.com/tft-3-developer-kit-stm32f4"> TFT 3" - STM32F4
 </a>
 </li>
 </div>
@@ -6525,12 +6525,12 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="tft 3&quot; - pic32mx4  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="698" data-category-id="188" data-product-id="662" href="https://www.mikroe.com/tft-3-designer-kit-pic32mx4"> TFT 3&quot; - PIC32MX4
+<li class='tft 3" - pic32mx4  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="698" data-category-id="188" data-product-id="662" href="https://www.mikroe.com/tft-3-designer-kit-pic32mx4"> TFT 3" - PIC32MX4
 </a>
 </li>
-<li class="tft 4&quot; - pic32mx7  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="699" data-category-id="188" data-product-id="1196" href="https://www.mikroe.com/tft-4-designer-kit-pic32mx7"> TFT 4&quot; - PIC32MX7
+<li class='tft 4" - pic32mx7  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="699" data-category-id="188" data-product-id="1196" href="https://www.mikroe.com/tft-4-designer-kit-pic32mx7"> TFT 4" - PIC32MX7
 </a>
 </li>
 </div>
@@ -6545,8 +6545,8 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="tft 3&quot; - pic32mx4  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="700" data-category-id="189" data-product-id="661" href="https://www.mikroe.com/tft-3-developer-kit-pic32mx4"> TFT 3&quot; - PIC32MX4
+<li class='tft 3" - pic32mx4  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="700" data-category-id="189" data-product-id="661" href="https://www.mikroe.com/tft-3-developer-kit-pic32mx4"> TFT 3" - PIC32MX4
 </a>
 </li>
 </div>
@@ -6641,20 +6641,20 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="tft 3&quot; - dspic33fj  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="709" data-category-id="188" data-product-id="646" href="https://www.mikroe.com/tft-3-designer-kit-dspic33fj"> TFT 3&quot; - dsPIC33FJ
+<li class='tft 3" - dspic33fj  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="709" data-category-id="188" data-product-id="646" href="https://www.mikroe.com/tft-3-designer-kit-dspic33fj"> TFT 3" - dsPIC33FJ
 </a>
 </li>
-<li class="tft 3&quot; - dspic33ep  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="710" data-category-id="188" data-product-id="945" href="https://www.mikroe.com/tft-3-designer-kit-dspic33ep"> TFT 3&quot; - dsPIC33EP
+<li class='tft 3" - dspic33ep  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="710" data-category-id="188" data-product-id="945" href="https://www.mikroe.com/tft-3-designer-kit-dspic33ep"> TFT 3" - dsPIC33EP
 </a>
 </li>
-<li class="tft 3&quot; - pic24ep  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="711" data-category-id="188" data-product-id="949" href="https://www.mikroe.com/tft-3-designer-kit-pic24ep"> TFT 3&quot; - PIC24EP
+<li class='tft 3" - pic24ep  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="711" data-category-id="188" data-product-id="949" href="https://www.mikroe.com/tft-3-designer-kit-pic24ep"> TFT 3" - PIC24EP
 </a>
 </li>
-<li class="tft 3&quot; - pic24fj  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="708" data-category-id="188" data-product-id="647" href="https://www.mikroe.com/tft-3-designer-kit-pic24fj"> TFT 3&quot; - PIC24FJ
+<li class='tft 3" - pic24fj  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="708" data-category-id="188" data-product-id="647" href="https://www.mikroe.com/tft-3-designer-kit-pic24fj"> TFT 3" - PIC24FJ
 </a>
 </li>
 </div>
@@ -6669,20 +6669,20 @@ dataLayer.push({
 <div class="menu-wrap tse-scrollable wrapper  ">
 <div class="tse-scroll-content">
 <div class="tse-content">
-<li class="tft 3&quot; - dspic33fj  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="712" data-category-id="189" data-product-id="642" href="https://www.mikroe.com/tft-3-developer-kit-dspic33fj"> TFT 3&quot; - dsPIC33FJ
+<li class='tft 3" - dspic33fj  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="712" data-category-id="189" data-product-id="642" href="https://www.mikroe.com/tft-3-developer-kit-dspic33fj"> TFT 3" - dsPIC33FJ
 </a>
 </li>
-<li class="tft 3&quot; - pic24fj  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="713" data-category-id="189" data-product-id="645" href="https://www.mikroe.com/tft-3-developer-kit-pic24fj"> TFT 3&quot; - PIC24FJ
+<li class='tft 3" - pic24fj  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="713" data-category-id="189" data-product-id="645" href="https://www.mikroe.com/tft-3-developer-kit-pic24fj"> TFT 3" - PIC24FJ
 </a>
 </li>
-<li class="tft 3&quot; - pic24ep  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="714" data-category-id="189" data-product-id="948" href="https://www.mikroe.com/tft-3-developer-kit-pic24ep"> TFT 3&quot; - PIC24EP
+<li class='tft 3" - pic24ep  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="714" data-category-id="189" data-product-id="948" href="https://www.mikroe.com/tft-3-developer-kit-pic24ep"> TFT 3" - PIC24EP
 </a>
 </li>
-<li class="tft 3&quot; - dspic33ep  ">
-<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="715" data-category-id="189" data-product-id="944" href="https://www.mikroe.com/tft-3-developer-kit-dspic33ep"> TFT 3&quot; - dsPIC33EP
+<li class='tft 3" - dspic33ep  '>
+<a class="name" data-empty-block="0" data-stay-on-page="1" data-link-id="715" data-category-id="189" data-product-id="944" href="https://www.mikroe.com/tft-3-developer-kit-dspic33ep"> TFT 3" - dsPIC33EP
 </a>
 </li>
 </div>
@@ -6872,8 +6872,8 @@ dataLayer.push({
 <a class="name" data-empty-block="0" data-stay-on-page="0" data-link-id="168" href="https://www.mikroe.com/blog/category/learn"> Learn
 </a>
 </li>
-<li class="let&#039;s make   level2LI">
-<a class="name" data-empty-block="0" data-stay-on-page="0" data-link-id="169" href="https://www.mikroe.com/blog/category/let-s-make"> Let&#039;s make
+<li class="let's make   level2LI">
+<a class="name" data-empty-block="0" data-stay-on-page="0" data-link-id="169" href="https://www.mikroe.com/blog/category/let-s-make"> Let's make
 </a>
 </li>
 <li class="books   level2LI">
@@ -6945,7 +6945,7 @@ dataLayer.push({
 </ul>
 <div id="application-info-wrap" style="display: none;">
 <div class="app-search-wrap input-effect">
-<input id="app-search" type="text" spellcheck="false"/>
+<input id="app-search" type="text" spellcheck="false">
 <label>Type some app..</label>
 <i class="reload-value">Reset filter<i class="fal fa-redo"></i></i>
 <span class="focus-border"></span>
@@ -7014,12 +7014,12 @@ dataLayer.push({
 <div class="auth-form-content">
 <div class="form-group">
 <label for="email">Email</label>
-<input class="is_required validate form-control" data-validate="isEmail" type="email" id="email" name="email" value=""/>
+<input class="is_required validate form-control" data-validate="isEmail" type="email" id="email" name="email" value="">
 <p id="email-error" class="errorField"></p>
 </div>
 <div class="form-group">
 <label for="passwd">Password</label>
-<input class="is_required validate form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value=""/>
+<input class="is_required validate form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value="">
 </div>
 </div>
 <div class="auth-form-buttons">
@@ -7066,13 +7066,13 @@ Your cart is empty !
 <div class="cart-footer">
 <div class="bottom-sec item-cart">
 <a href="https://www.mikroe.com/order" class="btn-cart">
-View cart (<span class="nb-total-products"></span>&nbsp;<span class="item-cart-txt"></span>)
+View cart (<span class="nb-total-products"></span>&#160;<span class="item-cart-txt"></span>)
 </a>
 </div>
 </div>
 </div>
 </div>
-<link href="https://www.mikroe.com/themes/me-simplicity/css/global/me-globalnav/A.me-globalnav-mega.css.pagespeed.cf.x2uZ41mzSu.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.mikroe.com/themes/me-simplicity/css/global/me-globalnav/A.me-globalnav-mega.css.pagespeed.cf.x2uZ41mzSu.css" rel="stylesheet" type="text/css">
 <div id="page">
 <div class="header-container">
 <header id="header">
@@ -7128,7 +7128,7 @@ View cart (<span class="nb-total-products"></span>&nbsp;<span class="item-cart-t
 </div>
 </div>
 </a>
-<div id="books-container" class="container"> <div class="row"><div class="col-md-12 book-content-wrapper"><div id="book-title-div"><h2>3.4 Timer TMR0</h2></div><div class="ebooks-table-of-contents"></div><div class="book-navigation-container"><div class="book-navigation-wrapper">&nbsp;<span class="previous-book-page"><a href="/ebooks/pic-microcontrollers-programming-in-c/inputoutput-ports/"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></span><span class="next-book-page"><a href="/ebooks/pic-microcontrollers-programming-in-c/timer-tmr1/"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></span></div></div><p id="c3v4">The timer TMR0 has a wide range of application in practice. Very few programs don’t use it in some way. It is very convenient and easy to use for writing programs or subroutines for generating pulses of arbitrary duration, time measurement or counting external pulses (events) with almost no limitations.</p>
+<div id="books-container" class="container"> <div class="row"><div class="col-md-12 book-content-wrapper"><div id="book-title-div"><h2>3.4 Timer TMR0</h2></div><div class="ebooks-table-of-contents"></div><div class="book-navigation-container"><div class="book-navigation-wrapper">&#160;<span class="previous-book-page"><a href="/ebooks/pic-microcontrollers-programming-in-c/inputoutput-ports/"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></span><span class="next-book-page"><a href="/ebooks/pic-microcontrollers-programming-in-c/timer-tmr1/"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></span></div></div><p id="c3v4">The timer TMR0 has a wide range of application in practice. Very few programs don&#8217;t use it in some way. It is very convenient and easy to use for writing programs or subroutines for generating pulses of arbitrary duration, time measurement or counting external pulses (events) with almost no limitations.</p>
 The timer TMR0 module is an 8-bit timer/counter with the following features:
 <ul class="default_font flat">
 <li>8-bit timer/counter;</li>
@@ -7138,9 +7138,9 @@ The timer TMR0 module is an 8-bit timer/counter with the following features:
 <li>Programmable external clock edge selection.</li>
 </ul>
 Figure below illustrates the timer TMR0 schematic with all bits which determine its operation. These bits are stored in the OPTION_REG register.
-<div class="center"><img src="https://cdn.mikroe.com/ebooks/img/3/2016/01/pic-microcontrollers-programming-in-c-chapter-03-image-51.gif" alt="pic-microcontrollers-programming-in-c-chapter-03-image-51" class="aligncenter size-full wp-image-219" height="492" width="750"/></div>
+<div class="center"><img src="https://cdn.mikroe.com/ebooks/img/3/2016/01/pic-microcontrollers-programming-in-c-chapter-03-image-51.gif" alt="pic-microcontrollers-programming-in-c-chapter-03-image-51" class="aligncenter size-full wp-image-219" height="492" width="750"></div>
 <h3>OPTION_REG Register</h3>
-<div class="center"><img src="https://cdn.mikroe.com/ebooks/img/3/2016/01/pic-microcontrollers-programming-in-c-chapter-03-image-52.gif" alt="pic-microcontrollers-programming-in-c-chapter-03-image-52" class="aligncenter size-full wp-image-220" height="170" width="750"/></div>
+<div class="center"><img src="https://cdn.mikroe.com/ebooks/img/3/2016/01/pic-microcontrollers-programming-in-c-chapter-03-image-52.gif" alt="pic-microcontrollers-programming-in-c-chapter-03-image-52" class="aligncenter size-full wp-image-220" height="170" width="750"></div>
 <ul class="default_font flat">
 <li><b>RBPU - PORTB Pull-up enable bit</b>
 <ul class="default_font flat">
@@ -7256,7 +7256,7 @@ Figure below illustrates the timer TMR0 schematic with all bits which determine 
 </tbody>
 </table>
 When PSA bit is cleared, prescaler is asigned to TMR0 timer/counter as ilustrated on the figure below:
-<div class="center"><img src="https://cdn.mikroe.com/ebooks/img/3/2016/01/pic-microcontrollers-programming-in-c-chapter-03-image-53.gif" alt="pic-microcontrollers-programming-in-c-chapter-03-image-53" class="aligncenter size-full wp-image-221" height="390" width="699"/></div>
+<div class="center"><img src="https://cdn.mikroe.com/ebooks/img/3/2016/01/pic-microcontrollers-programming-in-c-chapter-03-image-53.gif" alt="pic-microcontrollers-programming-in-c-chapter-03-image-53" class="aligncenter size-full wp-image-221" height="390" width="699"></div>
 <b>Let's do it in mikroC...</b>
 <pre class="code">// In this example, TMR0 is configured as a timer and prescaler is assigned to it.
     
@@ -7282,7 +7282,7 @@ void main() {
     ...
     ...</pre>
 When PSA bit is set, prescaler is asigned to watch-dog timer as ilustrated on the next figure:
-<div class="center"><img src="https://cdn.mikroe.com/ebooks/img/3/2016/01/pic-microcontrollers-programming-in-c-chapter-03-image-54.gif" alt="pic-microcontrollers-programming-in-c-chapter-03-image-54" class="aligncenter size-full wp-image-222" height="386" width="699"/></div>
+<div class="center"><img src="https://cdn.mikroe.com/ebooks/img/3/2016/01/pic-microcontrollers-programming-in-c-chapter-03-image-54.gif" alt="pic-microcontrollers-programming-in-c-chapter-03-image-54" class="aligncenter size-full wp-image-222" height="386" width="699"></div>
 <b>Let's do it in mikroC...</b>
 <pre class="code">// In this example, prescaler (1:64) is assigned to Watch-dog timer.
     
@@ -7346,7 +7346,7 @@ In order to use TMR0 properly, it is necessary:
 <li>Number of pulses may be read from the TMR0 register. The prescaler and interrupt are used in the same manner as in timer mode.</li>
 </ul>
 </div>
-&nbsp;</div></div></div></div>
+&#160;</div></div></div></div>
 </div>
 </div>
 </div>
@@ -7359,15 +7359,15 @@ In order to use TMR0 properly, it is necessary:
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-header">
-<h3 class="title"><i class="fa fa-globe"></i>Prodavnica za inostrano tržište</h3>
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h3 class="title"><i class="fa fa-globe"></i>Prodavnica za inostrano tr&#382;i&#353;te</h3>
+<button type="button" class="close" data-dismiss="modal">&#215;</button>
 </div>
-<div class="modal-body">Nalazite se na prodavnici za inostrano tržište.&nbsp;Da li želite da Vas odvedemo na prodavnicu koja je namenjena za Srbiju?</div>
+<div class="modal-body">Nalazite se na prodavnici za inostrano tr&#382;i&#353;te.&#160;Da li &#382;elite da Vas odvedemo na prodavnicu koja je namenjena za Srbiju?</div>
 <div class="modal-footer">
 <button type="button" class="button button-medium mikroe-store-change">Odvedi me na srpsku prodavnicu</button>
 <button type="button" class="button button-medium mikroe-store-stay" data-dismiss="modal">Ostani ovde</button>
 <div class="checkbox">
-<label for="remind"><input type="checkbox" checked="checked" value="1" id="remind">Zapamti moj izbor</label>
+<label for="remind"><input type="checkbox" checked value="1" id="remind">Zapamti moj izbor</label>
 </div>
 </div>
 </div>
@@ -7377,15 +7377,15 @@ In order to use TMR0 properly, it is necessary:
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-header">
-<h3 class="title"><i class="fa fa-globe"></i>Prodavnica za inostrano tržište</h3>
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h3 class="title"><i class="fa fa-globe"></i>Prodavnica za inostrano tr&#382;i&#353;te</h3>
+<button type="button" class="close" data-dismiss="modal">&#215;</button>
 </div>
-<div class="modal-body">Nalazite se na prodavnici za inostrano tržište.&nbsp;Da li želite da Vas odvedemo na prodavnicu koja je namenjena za Srbiju?</div>
+<div class="modal-body">Nalazite se na prodavnici za inostrano tr&#382;i&#353;te.&#160;Da li &#382;elite da Vas odvedemo na prodavnicu koja je namenjena za Srbiju?</div>
 <div class="modal-footer">
 <button type="button" class="button button-medium mikroe-store-change">Odvedi me na srpsku prodavnicu</button>
 <button type="button" class="button button-medium mikroe-store-stay" data-dismiss="modal">Ostani ovde</button>
 <div class="checkbox">
-<label for="remind"><input type="checkbox" checked="checked" value="1" id="remind">Zapamti moj izbor</label>
+<label for="remind"><input type="checkbox" checked value="1" id="remind">Zapamti moj izbor</label>
 </div>
 </div>
 </div>
@@ -7409,7 +7409,7 @@ Subscribe to
 <span class="follow-us-icon-text">RSS</span>
 </a>
 </li><li>
-<a target="_blank" href="https://mikroe.us8.list-manage.com/subscribe/post?u=ee379f6885b1bdf5b09775a10&id=6b75870823">
+<a target="_blank" href="https://mikroe.us8.list-manage.com/subscribe/post?u=ee379f6885b1bdf5b09775a10&amp;id=6b75870823">
 <i class="fab fa-mailchimp"></i>
 <span class="follow-us-icon-text">newsletter</span>
 </a>
@@ -7463,7 +7463,7 @@ Subscribe to
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 <div class="join-us-heading-container">
 <p class="join-us-heading text-center ino-links"> Join us </p>
-<p class="join-us-heading text-center local-links"> Pridruži nam se </p>
+<p class="join-us-heading text-center local-links"> Pridru&#382;i nam se </p>
 </div>
 </div>
 <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-md-offset-1 col-lg-offset-1">
@@ -7567,7 +7567,7 @@ Subscribe to
 </div>
 <ul class="additional-links-list">
 <li>
-<a href="https://www.mikroe.com/mikrobus">mikroBUS&trade;</a>
+<a href="https://www.mikroe.com/mikrobus">mikroBUS&#8482;</a>
 </li>
 <li>
 <a href="https://www.mikroe.com/mikrosdk">mikroSDK</a>
@@ -7579,13 +7579,13 @@ Subscribe to
 <a href="https://www.mikroe.com/click-cloud-iot-service">Click Cloud</a>
 </li>
 <li>
-<a href="https://www.mikroe.com/click-boards">Click boards&trade;</a>
+<a href="https://www.mikroe.com/click-boards">Click boards&#8482;</a>
 </li>
 <li>
-<a href="https://www.mikroe.com/1000-click-boards">1000 Click Boards™</a>
+<a href="https://www.mikroe.com/1000-click-boards">1000 Click Boards&#8482;</a>
 </li>
 <li>
-<a href="https://libstock.mikroe.com">Libstock&trade;</a>
+<a href="https://libstock.mikroe.com">Libstock&#8482;</a>
 </li>
 <li>
 <a href="/planet-debug">Planet Debug</a>
@@ -7614,7 +7614,7 @@ Subscribe to
 <div class="row">
 <div class="col-xs-12 col-sm-6 col-md-6">
 <h5 class="copyright-heading">
-Copyright&copy; 2022 MikroElektronika d.o.o.
+Copyright&#169; 2022 MikroElektronika d.o.o.
 </h5>
 </div>
 <div class="col-xs-12 col-sm-6 col-md-6">
@@ -7785,7 +7785,7 @@ if($('#sign_in_lang').hasClass('en')){
 	txt2 = "connect with";
 }else{
 	txt1 = "ili";
-	txt2 = "poveži se preko"
+	txt2 = "pove&#382;i se preko"
 }
 
 
@@ -9498,7 +9498,7 @@ $(document).ready(function() {
 					content		: [ 'prev', 'breadcrumbs', 'close' ]
 				}
 				/*, {
-					content		: [ '<span>Copyright© 2019 MikroElektronika d.o.o.</span>' ]
+					content		: [ '<span>Copyright&#169; 2019 MikroElektronika d.o.o.</span>' ]
 				}*/
 			]
 		},
@@ -9550,3 +9550,4 @@ ga('send', 'pageview');
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<meta charset="utf-8"></body></html>

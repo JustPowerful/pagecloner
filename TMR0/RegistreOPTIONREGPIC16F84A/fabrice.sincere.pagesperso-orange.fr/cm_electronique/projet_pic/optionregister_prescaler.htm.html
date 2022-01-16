@@ -1,0 +1,67 @@
+<html>
+<!--
+* PyWebCopy Engine [version 7.0.1]
+* Copyright 2020; Raja Tomar
+* File mirrored from [http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/optionregister.htm#prescaler]
+* At UTC datetime: [2022-01-16 03:30:44.858897]
+--><head>
+<title>Registre OPTION_REG PIC 16F84A</title> <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<script type="text/javascript">
+//<![CDATA[
+var gs_d=new Date,DoW=gs_d.getDay();gs_d.setDate(gs_d.getDate()-(DoW+6)%7+3);
+var ms=gs_d.valueOf();gs_d.setMonth(0);gs_d.setDate(4);
+var gs_r=(Math.round((ms-gs_d.valueOf())/6048E5)+1)*gs_d.getFullYear();
+var gs_p = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape("%3Cscript src='" + gs_p + "s.gstat.orange.fr/lib/gs.js?"+gs_r+"' type='text/javascript'%3E%3C/script%3E"));
+//]]>
+</script>
+</head>
+
+<body bgcolor="#FFFFCC">
+<p><a href="http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/registrespeciaux.htm"><img src="../../prev1.gif" width="32" height="32" border="0"> 
+</a><font size="6" color="#0000FF"><b>PIC 16F84A</b></font></p><p><font size="6" color="#0000FF"><b><font color="#800000">Registre 
+OPTION_REG</font></b></font></p><p>&#160;</p><p><font size="4">Il s'agit d'un registre 
+sp&#233;cial situ&#233; &#224; l'adresse 0x81 (banque 1) de la m&#233;moire 
+des donn&#233;es (Data RAM).</font></p><p>&#160;</p><table width="89%" border="1"><tr><td width="11%"><div align="CENTER"></div></td><td width="16%"><div align="CENTER"><b><font size="4">Nom</font></b></div></td><td width="73%"><div align="CENTER"><b><font size="4">Description</font></b></div></td></tr><tr><td width="11%"><div align="CENTER"><font size="4">bit 
+7 </font></div></td><td width="16%"><div align="CENTER"><font color="#0000FF"><b><font size="5">NOT_RBPU</font></b></font></div></td><td width="73%"><p><font size="4">"Port 
+B Pull-up Enable"</font></p><ul><li><font size="4">Ce bit doit &#234;tre 
+mis &#224; 0 pour activer les <b><a href="http://fabrice.sincere.pagesperso-orange.fr/cm_electronique/projet_pic/pullup.htm">r&#233;sistances de 
+pull-up</a></b> du port B</font></li><li><p><font size="4"></font><font size="4">Ce 
+bit doit &#234;tre mis &#224; 1 pour d&#233;sactiver les r&#233;sistances 
+de pull-up du port B</font></p></li></ul></td></tr><tr><td width="11%"><div align="CENTER"><font size="4">bit 
+6 </font></div></td><td width="16%"><div align="CENTER"><font color="#0000FF"><b><font size="5">INTEDG</font></b></font></div></td><td width="73%"><p><font size="4">"Interrupt 
+edge select"</font></p><ul><li><font size="4">Ce bit doit &#234;tre mis 
+&#224; 0 pour que l'interruption de la broche RB0/INT soit active sur un front 
+descendant</font></li><li><font size="4">Ce bit doit &#234;tre mis &#224; 1 
+pour que l'interruption de la broche RB0/INT soit active sur un front montant 
+</font></li></ul></td></tr><tr><td width="11%"><div align="CENTER"><font size="4">bit 
+5 </font></div></td><td width="16%"><div align="CENTER"><font color="#0000FF"><b><font size="5">T0CS</font></b></font></div></td><td width="73%"><p><font size="4">"TMR0 
+Clock Source Select"</font></p><ul><li><font size="4">Ce bit doit &#234;tre 
+mis &#224; 0 pour que l'horloge du module TMR0 soit l'horloge interne (un quart 
+de la fr&#233;quence du signal OSC1/CLKIN) </font></li><li><font size="4">Ce 
+bit doit &#234;tre mis &#224; 1 pour que l'horloge du module TMR0 soit le signal 
+de la broche RA4/T0CKI</font></li></ul></td></tr><tr><td width="11%"><div align="CENTER"><font size="4">bit 
+4</font></div></td><td width="16%"><div align="CENTER"><font color="#0000FF"><b><font size="5">T0SE</font></b></font></div></td><td width="73%"><p><font size="4">"TMR0 
+Source edge select"</font></p><p><font size="4">Dans le cas o&#249; T0CS 
+= 1, le signal d'horloge de la broche </font><font size="4">RA4/T0CKI est actif 
+: </font></p><ul><li><font size="4"> sur front montant quand T0SE = 0</font></li><li><font size="4">sur 
+front descendant quand T0SE = 1</font></li></ul></td></tr><tr><td width="11%"><div align="CENTER"><font size="4">bit 
+3</font></div></td><td width="16%"><div align="CENTER"><font color="#0000FF"><b><font size="5">PSA</font></b></font></div></td><td width="73%"><p><font size="4">"Prescaler 
+assignment"</font></p><p><font size="4">Le pr&#233;diviseur est attribu&#233; 
+: </font></p><ul><li><font size="4">au module TMR0 quand PSA = 0</font></li><li><font size="4">au 
+Watchdog quand PSA = 1</font></li></ul></td></tr><tr><td width="11%"><div align="CENTER"><font size="4">bits 
+2, 1, 0 </font></div></td><td width="16%"><div align="CENTER"><font color="#0000FF"><b><font size="5">PS2, 
+PS1, PS0</font></b></font></div></td><td width="73%"><font size="4">"Prescaler 
+rate select" (Cf. tableau ci-dessous)</font></td></tr></table><p><a name="prescaler"></a></p><p><font size="5"><b>Param&#232;tres 
+du prescaler :</b></font></p><table width="52%" border="1"><tr><td width="15%"><div align="CENTER"><font color="#0000FF"><b><font size="4">PSA</font></b></font></div></td><td width="26%"><div align="CENTER"><font color="#0000FF" size="4"><b>PS2, 
+PS1, PS0</b></font></div></td><td width="27%"><p align="CENTER"><font size="4">Taux 
+de pr&#233;division</font></p><p align="CENTER"><font size="4">du module TMR0 
+</font></p></td><td width="32%"><p align="CENTER"><font size="4">Taux de pr&#233;division</font></p><p align="CENTER"><font size="4">du 
+Watchdog</font></p></td></tr><tr><td width="15%" height="2"><div align="CENTER"><font size="4">0</font></div></td><td width="26%" height="2"><div align="CENTER"><font size="4">000</font></div></td><td width="27%" height="2"><div align="CENTER"><font size="4">2</font></div></td><td width="32%" height="2"><div align="CENTER"><font color="#804040"><b><font size="4">1</font></b></font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4">0</font></div></td><td width="26%"><div align="CENTER"><font size="4">001</font></div></td><td width="27%"><div align="CENTER"><font size="4">4</font></div></td><td width="32%"><div align="CENTER"><font color="#804040"><b><font size="4">1</font></b></font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4">0</font></div></td><td width="26%"><div align="CENTER"><font size="4">010</font></div></td><td width="27%"><div align="CENTER"><font size="4">8</font></div></td><td width="32%"><div align="CENTER"><font color="#804040"><b><font size="4">1</font></b></font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4">0</font></div></td><td width="26%"><div align="CENTER"><font size="4">011</font></div></td><td width="27%"><div align="CENTER"><font size="4">16</font></div></td><td width="32%"><div align="CENTER"><font color="#804040"><b><font size="4">1</font></b></font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4">0</font></div></td><td width="26%"><div align="CENTER"><font size="4">100</font></div></td><td width="27%"><div align="CENTER"><font size="4">32</font></div></td><td width="32%"><div align="CENTER"><font color="#804040"><b><font size="4">1</font></b></font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4">0</font></div></td><td width="26%"><div align="CENTER"><font size="4">101</font></div></td><td width="27%"><div align="CENTER"><font size="4">64</font></div></td><td width="32%"><div align="CENTER"><font color="#804040"><b><font size="4">1</font></b></font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4">0</font></div></td><td width="26%"><div align="CENTER"><font size="4">110</font></div></td><td width="27%"><div align="CENTER"><font size="4">128</font></div></td><td width="32%"><div align="CENTER"><font color="#804040"><b><font size="4">1</font></b></font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4">0</font></div></td><td width="26%"><div align="CENTER"><font size="4">111</font></div></td><td width="27%"><div align="CENTER"><font size="4">256</font></div></td><td width="32%"><div align="CENTER"><font color="#804040"><b><font size="4">1</font></b></font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4" color="#0000FF">1</font></div></td><td width="26%"><div align="CENTER"><font size="4">000</font></div></td><td width="27%"><div align="CENTER"><font color="#800000"><b><font size="4">1</font></b></font></div></td><td width="32%"><div align="CENTER"><font size="4">1</font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4" color="#0000FF">1</font></div></td><td width="26%"><div align="CENTER"><font size="4">001</font></div></td><td width="27%"><div align="CENTER"><font color="#800000"><b><font size="4">1</font></b></font></div></td><td width="32%"><div align="CENTER"><font size="4">2</font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4" color="#0000FF">1</font></div></td><td width="26%"><div align="CENTER"><font size="4">010</font></div></td><td width="27%"><div align="CENTER"><font color="#800000"><b><font size="4">1</font></b></font></div></td><td width="32%"><div align="CENTER"><font size="4">4</font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4" color="#0000FF">1</font></div></td><td width="26%"><div align="CENTER"><font size="4">011</font></div></td><td width="27%"><div align="CENTER"><font color="#800000"><b><font size="4">1</font></b></font></div></td><td width="32%"><div align="CENTER"><font size="4">8</font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4" color="#0000FF">1</font></div></td><td width="26%"><div align="CENTER"><font size="4">100</font></div></td><td width="27%"><div align="CENTER"><font color="#800000"><b><font size="4">1</font></b></font></div></td><td width="32%"><div align="CENTER"><font size="4">16</font></div></td></tr><tr><td width="15%" height="24"><div align="CENTER"><font size="4" color="#0000FF">1</font></div></td><td width="26%" height="24"><div align="CENTER"><font size="4">101</font></div></td><td width="27%" height="24"><div align="CENTER"><font color="#800000"><b><font size="4">1</font></b></font></div></td><td width="32%" height="24"><div align="CENTER"><font size="4">32</font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4" color="#0000FF">1</font></div></td><td width="26%"><div align="CENTER"><font size="4">110</font></div></td><td width="27%"><div align="CENTER"><font color="#800000"><b><font size="4">1</font></b></font></div></td><td width="32%"><div align="CENTER"><font size="4">64</font></div></td></tr><tr><td width="15%"><div align="CENTER"><font size="4" color="#0000FF">1</font></div></td><td width="26%"><div align="CENTER"><font size="4">111</font></div></td><td width="27%"><div align="CENTER"><font color="#800000"><b><font size="4">1</font></b></font></div></td><td width="32%"><div align="CENTER"><font size="4">128</font></div></td></tr></table>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof _gstat != "undefined") _gstat.audience('','pagesperso-orange.fr');
+//]]>
+</script>
+</body>
+</html>
